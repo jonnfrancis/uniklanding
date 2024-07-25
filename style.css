@@ -2,12 +2,18 @@
 
 body {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
-
+li {
+    list-style: none;
+}
 h1 {
     font-family: "Outfit", sans-serif;
     color: #fff;
@@ -64,8 +70,202 @@ h1 {
     background: #468585;
     color: white;
 }
+.site-header {
+    padding-left: 70px;
+}
 
-@media (min-width: 640px) {
+.nav-cols {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.nav-links {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    /* grid-template-columns: 100%;
+    grid-template-rows: 1fr; */
+}
+
+.links-list {
+    position: relative;
+    justify-self: start;
+    align-self: start;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.links-list > li {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: color 3s ease-in;
+}
+
+.links-list > li > a {
+    color: whitesmoke;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+.links-list > li > a > p {
+    line-height: 30px;
+    text-align: right;
+    color: white;
+    padding: 0 10px;
+}
+.links-list > li:nth-child(1) > a > p {
+    line-height: 30px;
+    text-align: right;
+    color: #ff7fe8;
+    
+}
+.links-list > li:hover > a > p {
+    color: #ff7fe8;
+}
+.search-input {
+    padding-top: 7px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+}
+.search {
+    width: 150px;
+    margin-right: 1rem;
+    height: 40px;
+    color: #ffffff;
+    border-color: white;
+    overflow: hidden;
+}
+.mesh-container {
+    overflow: hidden;
+}
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.video-container > video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+}
+
+.hero-inline {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    pointer-events: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.mesh-container-cont {
+    display: grid;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: repeat(3, min-content) 1fr;
+    grid-template-columns: 100%;
+}
+
+.hero-header {
+    left: 13px;
+    min-height: 38px;
+    padding-top: 100px;
+}
+
+.hero-header > h1 {
+    font-family: 'Garamond', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    max-width: 65%;
+    margin-inline: auto;
+    margin-bottom: 8px;
+}
+
+.hero-desc {
+    margin: 0 0 10px 0;
+}
+
+.hero-desc > p {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Outfit', serif;
+    font-weight: 500;
+    max-width: 50%;
+    margin-inline: auto;
+    margin-top: 8px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+}
+
+.hero-img-bg {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img-bg > img {
+    border-radius: 500px 500px 0  0;
+}
+
+.search > form {
+    padding: 0 10px;
+}
+
+.search-icon {
+    cursor: text;
+    margin-block: auto;
+    padding-right: .45rem;
+    flex-shrink: 0;
+    height: .9em;
+    max-height: 50px;
+    min-height: 14px;
+    min-width: 14px;
+    width: .9em;
+}
+
+#search-box {
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: none;
+    max-width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+}
+
+.search > form {
+    display: flex;
+}
+
+@media (max-width: 782x) {
+    .links-list > li > a { 
+        font-size: .25rem;
+    }
     /* .canva-design {} */
 }
 
