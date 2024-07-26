@@ -351,6 +351,7 @@ section.about-us {
     min-width: 380px;
     max-width: 500px;
     height: 380px;
+    margin-block: auto;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
