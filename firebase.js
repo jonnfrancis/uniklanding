@@ -11,13 +11,13 @@ import { getFirestore, collection, getDocs, doc, getDoc, updateDoc} from "https:
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCb1BXSkXYtpKRCaju2zi8hkhpM8z6r1n8",
+    apiKey: import.meta.env.API_KEY,
     authDomain: "unik-cards.firebaseapp.com",
     projectId: "unik-cards",
     storageBucket: "unik-cards.appspot.com",
     messagingSenderId: "111388240499",
-    appId: "1:111388240499:web:05154cb135c4faf2155806",
-    measurementId: "G-Q0ZQ6ZLFLG"
+    appId: import.meta.env.APP_ID,
+    measurementId: import.meta.env.MEASUREMENT_ID
 };
 
 // Initialize Firebase
