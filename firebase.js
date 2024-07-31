@@ -11,13 +11,13 @@ import { getFirestore, collection, getDocs, doc, getDoc, updateDoc} from "https:
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: import.meta.env.API_KEY,
+    apiKey: import.meta.env.VITE_API_KEY,
     authDomain: "unik-cards.firebaseapp.com",
     projectId: "unik-cards",
     storageBucket: "unik-cards.appspot.com",
     messagingSenderId: "111388240499",
-    appId: import.meta.env.APP_ID,
-    measurementId: import.meta.env.MEASUREMENT_ID
+    appId: import.meta.env.VITE_APP_ID,
+    measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
