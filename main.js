@@ -1,3 +1,6 @@
+import './style.css'
+import './fonts.css'
+
 const toggle = document.getElementById("menu-toggle")
 const links = document.getElementById("menu-links")
 const cards = document.getElementById("cards")
