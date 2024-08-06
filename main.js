@@ -3,8 +3,6 @@ import './fonts.css'
 
 const toggle = document.getElementById("menu-toggle")
 const links = document.getElementById("menu-links")
-const cards = document.getElementById("cards")
-let isLike;
 document.querySelector('video').playbackRate = 0.5;
 // const db = firebase.firestore()
 // const increment = firebase.firestore.FieldValue.increment(1)
@@ -144,6 +142,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: 'power4.out',
         delay: 4
     })
+    gsap.set('.site-content', {css:{zIndex:1}, delay: 5})
     gsap.from(".hero-img", {
         scrollTrigger: {
             trigger: ".hero-img",

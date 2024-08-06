@@ -5,11 +5,7 @@ import {
     getAnalytics
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
 import { getFirestore, collection, getDocs, doc, getDoc, updateDoc} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_API_KEY,
     authDomain: "unik-cards.firebaseapp.com",
